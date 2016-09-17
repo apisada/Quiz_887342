@@ -1,5 +1,4 @@
 US_states = 
-
 	{"Alabama" => "AL",
 	"Alaska" => "AK",
 	"Arizona" => "AZ",
@@ -51,10 +50,19 @@ US_states =
 	"West Virginia" => "WV",
 	"Wisconsin" => "WI",
 	"Wyoming" => "WY"}
-	
-	US_states.each do |key , value|
-	    US_states.each {|x,y|
+	puts "- - - - - - - - -1.1 - - - - - - - - - - - - "
+	US_states.each {|x,y|
 	    if y[1]=="T" ||  y[1]=="N"
 	puts y
 	end
-	  end
+	}
+	puts "- - - - - - - - -1.2 - - - - - - - - - - - - "
+    puts US_states.sort.reverse
+    
+    
+    puts "- - - - - - - - -1.3 - - - - - - - - - - - - "
+	US_states.each {|x,y|
+	if (x[0]=="A"|| x[0]=="E"|| x[0]=="I"|| x[0]=="O"|| x[0]=="U")&&(x[x.length-1]=="a"||x[x.length-1]=="e"||x[x.length-1]=="i"||x[x.length-1]=="o"||x[x.length-1]=="u")
+	    puts x
+	end
+	}
