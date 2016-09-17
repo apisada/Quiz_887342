@@ -57,13 +57,12 @@ US_states =
 	end
 	}
 	puts "- - - - - - - - -1.2 - - - - - - - - - - - - "
-	puts US_states.sort.reverse
+    puts US_states.sort.reverse
     
     
-    	puts "- - - - - - - - -1.3 - - - - - - - - - - - - "
+    puts "- - - - - - - - -1.3 - - - - - - - - - - - - "
 	US_states.each {|x,y|
-	if (x[0]=="A"|| x[0]=="E"|| x[0]=="I"|| x[0]=="O"||x[0]=="U")
-	&&(x[x.length-1]=="a"||x[x.length-1]=="e"||x[x.length-1]=="i"||x[x.length-1]=="o"||x[x.length-1]=="u")
+	if (x[0]=="A"|| x[0]=="E"|| x[0]=="I"|| x[0]=="O"|| x[0]=="U")&&(x[x.length-1]=="a"||x[x.length-1]=="e"||x[x.length-1]=="i"||x[x.length-1]=="o"||x[x.length-1]=="u")
 	    puts x
 	end
 	}
